@@ -13,7 +13,7 @@ import { AppService } from './app.service';
       password: '112002',
       database: 'padel_ucn',
       autoLoadEntities: true,
-      synchronize: true, // solo para desarrollo
+      synchronize: false, // solo para desarrollo
     }),
   ],
   controllers: [AppController],
