@@ -1,5 +1,3 @@
-# frontend/Dockerfile
-
 FROM node:18-alpine
 
 WORKDIR /app
@@ -11,4 +9,6 @@ RUN npm run build
 
 # Servidor simple para servir el build
 RUN npm install -g serve
+EXPOSE 5173
 CMD ["serve", "-s", "dist", "-l", "5173"]
+
